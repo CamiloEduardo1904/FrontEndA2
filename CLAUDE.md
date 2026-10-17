@@ -34,6 +34,10 @@ Plano de contexto completo: @docs/plano-contexto.md
   Tipos: `feat`, `fix`, `style`, `docs`, `refactor`, `chore`. Ex.: `feat: cria pagina sobre.html com os autores`.
 - Fluxo: feature → **develop** (PR + 1 aprovação de outra pessoa) → **main** (só via PR develop→main).
   **Nunca** commit direto em `develop` ou `main`.
+- **Pull Requests e commits sem assinatura de IA:** não inclua linhas de atribuição/assinatura
+  automática (ex.: "🤖 Generated with Claude Code", "Co-Authored-By: Claude"). O histórico é da equipe.
+- **Descreva com clareza o que foi feito:** o título e a descrição do PR devem dizer, de forma
+  objetiva, o que foi realizado (o quê e por quê) — em tópicos quando ajudar na revisão.
 
 ## 5. Erros a evitar
 - Criar páginas sem reaproveitar o layout do `index.html`.
