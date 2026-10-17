@@ -203,9 +203,14 @@ th { background: var(--azul-medio); color: var(--branco); }
 
 /* ===== Responsivo ===== */
 @media (max-width: 640px) {
-  .slide { padding: 40px 48px; }
+  .slide { padding: 40px 60px; }
   .slide__titulo { font-size: 1.6rem; }
   .conteudo { padding: 24px 20px; }
+
+  /* Menu em uma linha com rolagem horizontal (em vez de quebrar em várias linhas) */
+  .menu { width: 100%; }
+  .menu ul { flex-wrap: nowrap; overflow-x: auto; gap: 16px; padding-bottom: 4px; }
+  .menu a { white-space: nowrap; }
 }
 @media (min-width: 768px) {
   .slide__titulo { font-size: 2.4rem; }
