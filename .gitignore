@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Segredos — nunca versionar (o modelo é o .env.example)
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
