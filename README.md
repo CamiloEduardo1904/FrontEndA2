@@ -60,5 +60,9 @@ Commits e branches nunca vão direto para `develop` ou `main`.
 
 ## Autores
 
-<!-- Preencher com os integrantes do grupo -->
-- …
+- Camilo Eduardo
+- Carlos Eduardo
+- Gabriel Evaristo
+- Gabriel Oneil
+- João Vitor
+- Yago Dos Santos

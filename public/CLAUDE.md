@@ -6,10 +6,10 @@
 ## HTML semântico
 - Estrutura obrigatória: `header`, `nav`, `main`, `footer` (nunca `div` no lugar desses).
 - Um único `<h1>` por página; hierarquia de títulos sem pular níveis.
-- Reaproveite o cabeçalho e o rodapé do `index.html` em todas as páginas.
+- Reaproveite o cabeçalho (`.cabecalho` + `<nav class="menu">`) e o rodapé (`.rodape`) do `index.html` em todas as páginas; ao criar uma página, copie esse bloco e marque o link ativo com `aria-current="page"`.
 - `lang="pt-br"` no `<html>`; `<meta charset="UTF-8">` e viewport no `<head>`.
 - Toda `<img>` com `alt` descritivo (imagem decorativa: `alt=""`).
-- Crie um `<nav>` reutilizável ligando as 10 páginas (ainda não existe no projeto).
+- Páginas do site (menu): `index.html` (Início), `conteudo.html`, `aprofundamento.html`, `tabelas.html`, `acessibilidade.html`, `materias.html`, `video.html`, `autores.html`.
 
 Exemplo (seção acessível):
 ```html
