@@ -49,3 +49,30 @@ Na dúvida sobre conteúdo, qual página, fonte de dados ou imagem, **pare e per
 - As regras moram em `CLAUDE.md` (geral) e `public/CLAUDE.md` (site). Mantenha-as curtas e com exemplos reais do projeto.
 - Quando um mesmo padrão aparecer em 3+ arquivos, ou o mesmo erro/feedback se repetir, proponha atualizar o guia **mostrando a mudança antes de salvar**.
 - Regra obsoleta deve ser removida, não acumulada.
+
+## 8. Comportamento do agente
+*Como a IA deve trabalhar neste repositório. Vale sempre.*
+
+### Tecnologia (regras rígidas)
+- **HTML5 primeiro:** use HTML5 semântico e marcação válida (W3C).
+- **Nunca CSS inline:** todo estilo vai em `public/style.css`. Proibido `style="..."` nos elementos e `<style>` dentro das páginas.
+- **Sem frameworks sem pedido explícito:** nada de React, Vue, Angular, Tailwind, Bootstrap, jQuery ou similares. O padrão é **HTML/CSS puro** — só adote um framework se for **pedido explicitamente**.
+
+### Segredos e ferramentas (MCP)
+- **Nunca exponha variáveis de ambiente nem API keys:** não imprima, não cole no HTML/JS do cliente e não faça commit. Segredos só em `.env` (fora do Git) e nas variáveis do Railway. Permissões mínimas no MCP.
+- **Aprove cada ação:** não rode comando destrutivo sem confirmar; leia o que ele faz antes.
+- **Deploy é sagrado:** **não** faça deploy/redeploy no Railway sem perguntar.
+
+### Fluxo de trabalho
+- **Planeje antes de agir:** em tarefa que toca vários arquivos, mostre um plano curto e espere "ok" antes de editar.
+- **Pequeno e isolado:** uma tarefa por vez, uma branch por tarefa (`feat/…`, `fix/…`) a partir da `develop`.
+- **Verifique e mostre:** descreva o que mudou (diff); quem revisa e aprova o merge é uma pessoa.
+- **Se se perder:** pare, desfaça (revert) e refine o pedido — não insista repetindo.
+
+### Conteúdo e ética
+- **Pergunte antes:** faltando conteúdo, fonte, imagem ou decisão de produto, pare e pergunte em vez de inventar.
+- **LGPD:** nada de dados pessoais reais no site.
+- **Autoria:** o uso de IA é declarado; a responsabilidade pelo que o agente faz é da equipe.
+
+### Antes de concluir
+- **Valide:** W3C, navegação por teclado e contraste; teste local antes do push.
