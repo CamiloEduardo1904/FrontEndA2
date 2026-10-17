@@ -1,0 +1,21 @@
+name: Guard main source
+
+# Garante que qualquer Pull Request com destino a main
+# tenha sido aberto a partir da branch develop.
+# Qualquer outra origem faz o check falhar e bloqueia o merge.
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  guard-main-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR para main deve vir de develop
+        run: |
+          if [ "${{ github.head_ref }}" != "develop" ]; then
+            echo "::error::PRs para 'main' so podem ser abertos a partir de 'develop'. Origem recebida: '${{ github.head_ref }}'."
+            exit 1
+          fi
+          echo "OK: PR vindo de 'develop'."
