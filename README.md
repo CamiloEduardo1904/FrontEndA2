@@ -4,4 +4,4 @@ Escopo do Projeto Início - Home Pag 1 - Frase de Impacto para Gerar cliques, T�
 
 Escopo Não Funcional A Acessibilidade é essencial para garantir que o conteúdo possa ser utilizado pelo maior número de pessoas possível, incluindo aquelas com deficiências visuais, auditivas ou motoras. Por isso, será utilizado lang="pt-br" para facilitar a interpretação do idioma por tecnologias assistivas.
 
-https://pequenos-valores.up.railway.app/
+https://pequenosvalores.up.railway.app/

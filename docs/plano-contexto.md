@@ -56,7 +56,7 @@ Modo alto contraste; gráficos nas tabelas da pág. 6; player de vídeo acessív
 - Acessibilidade no Lighthouse ≥ 90.
 - 10 páginas consistentes publicadas.
 - Histórico de issues/PRs no GitHub.
-- Site no ar no Railway: https://pequenos-valores.up.railway.app/
+- Site no ar no Railway: https://pequenosvalores.up.railway.app/
 
 ---
 Tema alinhado aos ODS **1 — Erradicação da pobreza** e **10 — Redução das desigualdades**.
