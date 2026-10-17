@@ -20,7 +20,7 @@ Plano de contexto completo: @docs/plano-contexto.md
   - `.mcp.json` — servidores MCP (GitHub, Railway, Figma)
   - `.env` (fora do Git) — segredos; modelo em `.env.example`
 - **Idioma:** conteúdo em pt-BR; `lang="pt-br"` no `<html>`.
-- **Deploy:** Railway — https://pequenos-valores.up.railway.app/
+- **Deploy:** Railway — https://pequenosvalores.up.railway.app/
 
 ## 3. Regras gerais (fazer / não fazer)
 - Reaproveite cabeçalho, rodapé e o `public/style.css` existentes; mantenha o padrão visual do `index.html`.
