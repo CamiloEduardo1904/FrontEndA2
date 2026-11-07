@@ -11,9 +11,9 @@ Registro das principais decisões, aprendizados e dificuldades do projeto.
 | Início | Escolha do tema (educação financeira para baixa renda) e criação do repositório do grupo, com fluxo `feature → develop → main`. |
 | Bolso Coletivo | Primeira versão: página inicial com carrossel, artigo de aprofundamento e páginas-base com cabeçalho e rodapé padronizados. |
 | Conteúdo | Pesquisa de dados de 2026 (Serasa, CNC, Banco Central) e escrita das páginas O tema, Tabelas, Acessibilidade, Matérias, Vídeo e Autores. |
-| Cada Real | Reconstrução do site com layout novo, simuladores e página de dados com gráfico. |
+| Reformulação | Reconstrução do site com layout novo, simuladores e página de dados com gráfico. |
 | Notícias | Criação do robô que coleta notícias de finanças pessoais todo dia (GitHub Actions + Python). |
-| Junção | União do conteúdo do Bolso Coletivo com o Cada Real em um único site. |
+| Junção | Unificação de todo o conteúdo em um único site. |
 | A2 | Adequação ao enunciado: 10 páginas obrigatórias, formulário validado, galeria, mídia com vídeo/áudio/iframe, orçamento e esta documentação. |
 
 ## Decisões
