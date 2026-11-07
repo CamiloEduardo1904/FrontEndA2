@@ -6,7 +6,7 @@ Trabalho A2 da disciplina Desenvolvimento Front-end para Web (UNICID).
 
 > Repositório de aprendizado, em evolução.
 
-**Site no ar:** https://pequenosvalores.up.railway.app/
+**Site no ar:** https://pequenosvalores.site/
 
 ---
 
