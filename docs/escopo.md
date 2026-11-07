@@ -1,9 +1,9 @@
-# Escopo do projeto — Cada Real
+# Escopo do projeto — Bolso Coletivo
 
 ## 1. Identificação
 
 - **Equipe:** Bolso Coletivo
-- **Projeto/site:** Cada Real — https://yagoxavier10.github.io/cada-real/
+- **Projeto/site:** Bolso Coletivo — https://pequenosvalores.up.railway.app/
 - **Integrantes:** Camilo Eduardo, Carlos Eduardo, Gabriel Evaristo, Gabriel Oneil, João Vitor, Yago Dos Santos
 - **Data:** 31/10/2026
 - **Disciplina/Professor:** Desenvolvimento Front-end para Web — Prof. Paulo Fratta (UNICID)

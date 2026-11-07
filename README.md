@@ -94,14 +94,11 @@ Para atualizar as notícias na sua máquina: `python scripts/atualizar_noticias.
 `feature/*` → **develop** (Pull Request + aprovação) → **main** (PR `develop → main`).
 Commits e branches nunca vão direto para `develop` ou `main`.
 
-## Origem e autores
+## Autoria
 
-O site reúne dois projetos: o **Bolso Coletivo**, trabalho em grupo da disciplina Desenvolvimento
-Front-end para Web (UNICID), e o **Cada Real**, projeto pessoal de **Yago Dos Santos**. Do Bolso
-Coletivo vêm o texto de aprofundamento, o tema, a página de vídeo, o carrossel e a paleta; do Cada
-Real, os simuladores, o noticiário diário, os dados atualizados e o layout.
+Trabalho A2 da disciplina Desenvolvimento Front-end para Web (UNICID), feito em grupo.
 
-Equipe do Bolso Coletivo:
+Equipe:
 
 - Camilo Eduardo
 - Carlos Eduardo

@@ -1,4 +1,4 @@
-# Cada Real — documentação da Atividade A2
+# Bolso Coletivo — documentação da Atividade A2
 
 **Disciplina:** Desenvolvimento Front-end para Web · UNICID · Prof. Paulo Fratta
 **Equipe:** Bolso Coletivo
