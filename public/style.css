@@ -567,3 +567,23 @@ textarea.campo__entrada { resize: vertical; }
   .projetos li:nth-child(even) img { order: 2; }
   .contato-grade { grid-template-columns: 1.6fr 1fr; }
 }
+
+/* Links longos (ex.: endereço do repositório) quebram em vez de alargar a página no celular */
+.leitura a { overflow-wrap: anywhere; }
+
+/* Telas largas: galeria e cartões em mais colunas, para não sobrar espaço vazio */
+@media (min-width: 1200px) {
+  .galeria { grid-template-columns: repeat(3, 1fr); }
+  .contato-grade { grid-template-columns: 2fr 1fr; }
+}
+
+/* Monitores grandes: container mais largo e mais colunas */
+@media (min-width: 1500px) {
+  :root { --largura: 1440px; }
+  .contem { padding: 0 40px; }
+  .galeria { grid-template-columns: repeat(4, 1fr); }
+  .materias { grid-template-columns: repeat(3, 1fr); }
+  .noticias-lista--resumo { grid-template-columns: repeat(4, 1fr); }
+  .simuladores { grid-template-columns: repeat(3, 1fr); }
+  .simuladores > section { grid-column: 1 / -1; }
+}
