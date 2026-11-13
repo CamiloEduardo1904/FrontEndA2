@@ -14,7 +14,7 @@ Plano de contexto completo: @docs/plano-contexto.md
 ## 2. Contexto técnico
 - **Stack:** HTML5 + CSS3 puros, sem frameworks e sem build. (Node.js + Express entram só na fase de deploy do assistente.)
 - **Estrutura:**
-  - `public/` — páginas do site (`index.html`, `sobre.html`, …), `public/style.css` e `public/Assets/`
+  - `public/` — páginas do site (`index.html`, `sobre.html`, …), `public/style.css`, `public/js/`, `public/img/`, `public/assets/` e `public/dados/`
   - `docs/` — plano de contexto e documentação
   - `CLAUDE.md` (raiz) — regras gerais · `public/CLAUDE.md` — regras do site
   - `.mcp.json` — servidores MCP (GitHub, Railway, Figma)
@@ -42,7 +42,7 @@ Plano de contexto completo: @docs/plano-contexto.md
 ## 5. Erros a evitar
 - Criar páginas sem reaproveitar o layout do `index.html`.
 - Usar `<div>` no lugar de `header`, `nav`, `main`, `footer`.
-- Mais de um `<h1>` por página (o `index.html` atual tem dois — ao editar, corrija).
+- Mais de um `<h1>` por página.
 - `<img>` sem `alt` descritivo.
 - Inventar tecnologia (React, Tailwind, etc.): o projeto é HTML/CSS puro.
 

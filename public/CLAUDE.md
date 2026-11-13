@@ -9,7 +9,7 @@
 - Reaproveite o cabeçalho (`.cabecalho` + `<nav class="menu">`) e o rodapé (`.rodape`) do `index.html` em todas as páginas; ao criar uma página, copie esse bloco e marque o link ativo com `aria-current="page"`.
 - `lang="pt-br"` no `<html>`; `<meta charset="UTF-8">` e viewport no `<head>`.
 - Toda `<img>` com `alt` descritivo (imagem decorativa: `alt=""`).
-- Páginas do site (menu): `index.html` (Início), `conteudo.html`, `aprofundamento.html`, `tabelas.html`, `acessibilidade.html`, `materias.html`, `video.html`, `autores.html`.
+- Páginas do site (menu): `index.html` (Início), `sobre.html`, `projetos.html`, `impacto.html`, `galeria.html`, `midia.html`, `noticias.html`, `acessibilidade.html`, `contato.html`; além de `tema.html`, `aprofundamento.html` e `simuladores.html` (pelo rodapé e pelos cartões).
 
 Exemplo (seção acessível):
 ```html
@@ -24,13 +24,13 @@ Exemplo (seção acessível):
 - Mobile-first: estilos base no mobile e refine com `@media (min-width: …)`
   (o projeto já usa `@media (min-width: 900px)`).
 - Classes em português, `kebab-case`. Padronize nomes fora do padrão (ex.: `.TextoDeInicio` → `.texto-inicio`).
-- **Cores:** hoje estão fixas no código. Centralize na paleta em `:root` e use `var(--cor)`:
+- **Cores:** use sempre a paleta do `:root` com `var(--cor)`, nunca a cor fixa:
 ```css
 :root {
   --azul-escuro: #003B5C;
   --azul-medio:  #005F8D;
   --azul-claro:  #7FC8E8;
-  --fundo:       #E1F5FE;
+  --azul-suave:  #E1F5FE;
   --texto:       #1D1F21;
 }
 ```
@@ -43,6 +43,6 @@ Exemplo (seção acessível):
 - Associe cada `section` ao seu título com `aria-labelledby`.
 
 ## Erros a evitar
-- Dois `<h1>` na mesma página (no `index.html`: manter o do `header` **ou** o do `article`).
+- Dois `<h1>` na mesma página.
 - Texto de link genérico ("clique aqui").
 - Remover o `alt` de imagens.

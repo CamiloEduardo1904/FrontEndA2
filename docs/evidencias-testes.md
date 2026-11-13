@@ -21,7 +21,7 @@ Validador oficial: https://validator.w3.org/nu/ (envio do arquivo).
 | noticias.html | 0 | 0 |
 | contato.html | 0 | 0 |
 | tema.html · aprofundamento.html · simuladores.html | 0 | 0 |
-| css/estilo.css | 0 | 0 |
+| style.css | 0 | 0 |
 
 ## 2. Navegação e links
 

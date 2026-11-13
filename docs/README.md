@@ -2,8 +2,8 @@
 
 **Disciplina:** Desenvolvimento Front-end para Web · UNICID · Prof. Paulo Fratta
 **Equipe:** Bolso Coletivo
-**Site:** https://yagoxavier10.github.io/cada-real/
-**Repositório:** https://github.com/YagoXavier10/cada-real
+**Site:** https://pequenosvalores.site/
+**Repositório:** https://github.com/CamiloEduardo1904/FrontEndA2
 
 ## Tema
 
@@ -42,17 +42,19 @@ da pobreza), 10 (Redução das desigualdades) e 12 (Consumo e produção respons
 ## Estrutura de pastas
 
 ```
-cada-real/
-├── index.html  sobre.html  projetos.html  impacto.html  acessibilidade.html
-├── galeria.html  midia.html  noticias.html  contato.html
-├── tema.html  aprofundamento.html  simuladores.html
-├── css/        estilo.css
-├── js/         menu, carrossel, simuladores, barras, notícias, contato
-├── img/        galeria/, projetos/, pôster do vídeo, imagem do Sobre, favicon
-├── assets/     video/ (MP4 + legendas VTT), audio/ (MP3)
-├── dados/      noticias.json (gerado pelo robô)
-├── scripts/    atualizar_noticias.py
-└── docs/       esta documentação
+FrontEndA2/
+├── public/                 site publicado na Railway (Staticfile → root: public)
+│   ├── index.html  sobre.html  projetos.html  impacto.html  acessibilidade.html
+│   ├── galeria.html  midia.html  noticias.html  contato.html
+│   ├── tema.html  aprofundamento.html  simuladores.html
+│   ├── style.css   folha de estilo única
+│   ├── js/         menu, leitura por áudio, carrossel, simuladores, barras, notícias, contato
+│   ├── img/        galeria/, projetos/, pôster do vídeo, imagem do Sobre, favicon
+│   ├── assets/     video/ (MP4 + legendas VTT), audio/ (MP3 + leitura/)
+│   └── dados/      noticias.json (gerado pelo robô)
+├── scripts/        atualizar_noticias.py · gerar_audios.py
+├── .github/        workflows: notícias, áudios e proteção da main
+└── docs/           esta documentação
 ```
 
 ## Divisão de funções
