@@ -28,22 +28,29 @@ Validador oficial: https://validator.w3.org/nu/ (envio do arquivo).
 - Script de conferência percorreu todas as páginas: **nenhum link interno quebrado**, nenhuma âncora
   (`#`) inexistente e nenhum arquivo de imagem, vídeo, áudio, CSS ou JS faltando.
 - Menu com as páginas principais em todas as páginas, com a página atual marcada
-  (`aria-current="page"`); rodapé com links para todas as 12 páginas.
+  (`aria-current="page"`); rodapé com links para todas as 13 páginas.
 - Menu do celular abre e fecha pelo botão e fecha com a tecla Esc.
 
 ## 3. Formulário de contato
 
+A validação é feita em JavaScript (`public/js/contato.js`): o envio é interrompido com `preventDefault`,
+cada campo com problema recebe uma mensagem embaixo e borda vermelha (`aria-invalid="true"`), e o foco vai
+para o primeiro erro. Testado em 14/11/2026.
+
 | Teste | Resultado esperado | Resultado |
 |-------|--------------------|-----------|
-| Enviar vazio | Bloqueia (campos `required`) | ✅ bloqueou |
-| E-mail `maria@` | Inválido (`type="email"`) | ✅ inválido |
-| Telefone `123` | Inválido (`pattern`) | ✅ inválido |
+| Enviar vazio | 5 mensagens (nome, e-mail, assunto, mensagem e aceite) e foco no nome | ✅ "Falta corrigir 5 campos, destacados em vermelho." |
+| E-mail `abc` | Mensagem no campo | ✅ "Digite um e-mail válido, como nome@email.com." |
+| Telefone `123` | Mensagem no campo (`pattern`) | ✅ "Digite o telefone com DDD, como (11) 91234-5678." |
 | Telefone `(11) 91234-5678` | Válido | ✅ válido |
-| Idade `10` | Inválido (`min="14"`) | ✅ inválido |
-| Data anterior a 03/11/2026 | Inválido (`min` no `type="date"`) | ✅ campo restringe |
-| Todos os campos corretos + aceite LGPD | Mostra confirmação | ✅ "Obrigado, Maria! Mensagem validada…" |
+| Idade `5` | Mensagem no campo (`min="14"`) | ✅ "O valor mínimo é 14." |
+| Corrigir um campo depois de errar | A mensagem some na hora | ✅ some ao digitar |
+| Digitar e recarregar a página | Rascunho volta do `localStorage` | ✅ campos preenchidos e aviso "Recuperamos o rascunho…" |
+| Todos os campos corretos + aceite LGPD | Mostra confirmação e apaga o rascunho | ✅ "Obrigado, Maria! Mensagem validada…" |
 
-Todos os campos têm `<label for>` ligado ao `id` e textos de ajuda com `aria-describedby`.
+Todos os campos têm `<label for>` ligado ao `id`; os textos de ajuda e as mensagens de erro são ligados ao
+campo por `aria-describedby`, então o leitor de tela lê o erro junto com o nome do campo. Sem JavaScript,
+o navegador continua validando pelos atributos `required`, `type`, `pattern` e `min`/`max`.
 
 ## 4. Multimídia
 
