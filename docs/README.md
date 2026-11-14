@@ -36,7 +36,7 @@ da pobreza), 10 (Redução das desigualdades) e 12 (Consumo e produção respons
 | 7 | `midia.html` | `<video controls poster>` com legendas, `<audio controls>` e `<iframe>` |
 | 8 | `noticias.html` | Notícias do dia, atualizadas automaticamente |
 | 9 | `contato.html` | Dados fictícios, formulário validado e membros da equipe |
-| 10 | `orcamento_hospedagem.html` | *Retirada do site por enquanto; o orçamento está em [`orcamento-hospedagem.md`](orcamento-hospedagem.md)* |
+| 10 | `orcamento_hospedagem.html` | Onde o site está publicado, por quê, e comparação de preços de hospedagem e domínio (link no rodapé) |
 | + | `tema.html`, `aprofundamento.html`, `simuladores.html` | Conteúdo educativo e ferramentas |
 
 ## Estrutura de pastas
@@ -45,7 +45,7 @@ da pobreza), 10 (Redução das desigualdades) e 12 (Consumo e produção respons
 FrontEndA2/
 ├── public/                 site publicado na Railway (Staticfile → root: public)
 │   ├── index.html  sobre.html  projetos.html  impacto.html  acessibilidade.html
-│   ├── galeria.html  midia.html  noticias.html  contato.html
+│   ├── galeria.html  midia.html  noticias.html  contato.html  orcamento_hospedagem.html
 │   ├── tema.html  aprofundamento.html  simuladores.html
 │   ├── style.css   folha de estilo única
 │   ├── js/         menu, leitura por áudio, carrossel, simuladores, barras, notícias, contato
@@ -76,3 +76,5 @@ FrontEndA2/
 - [`diario-de-bordo.md`](diario-de-bordo.md) — decisões, aprendizados e dificuldades
 - [`orcamento-hospedagem.md`](orcamento-hospedagem.md) — hospedagem e domínio
 - [`evidencias-testes.md`](evidencias-testes.md) — validação, navegação e acessibilidade
+- [`melhorias-mvp.md`](melhorias-mvp.md) — o que mudou desde a 1ª entrega, com prints de antes e depois
+- Uso de IA: seção "Uso de IA" do [`diario-de-bordo.md`](diario-de-bordo.md) e [`plano-contexto.md`](plano-contexto.md)
