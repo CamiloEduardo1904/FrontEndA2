@@ -37,7 +37,7 @@ e surdocegueira) são público prioritário.
 - 10 páginas: Início, Sobre, Projetos, Impacto, Acessibilidade, Galeria, Mídia, Notícias, Contato e
   Orçamento de hospedagem — mais O tema, Aprofundamento e Simuladores.
 - Menu principal em todas as páginas e rodapé com links para todo o site.
-- Formulário de contato com validação HTML5.
+- Formulário de contato com validação em JavaScript e rascunho salvo no navegador (`localStorage`).
 - Galeria com 8 imagens legendadas e com fonte.
 - Mídia: vídeo próprio com legendas, áudio com transcrição e vídeo incorporado do Banco Central.
 - Notícias do dia e simuladores financeiros.

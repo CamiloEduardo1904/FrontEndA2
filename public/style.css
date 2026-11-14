@@ -14,6 +14,7 @@
 
   --texto-suave: #3D4A52;
   --linha:       #C7E6F4;
+  --erro:        #B3261E;
 
   --fonte: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   --largura: 1280px;
@@ -550,13 +551,22 @@ tbody tr:hover { background: var(--azul-suave); }
 }
 textarea.campo__entrada { resize: vertical; }
 .campo__entrada:focus-visible { border-color: var(--azul-medio); }
-.formulario .campo__entrada:user-invalid, .formulario select:user-invalid { border-color: #B3261E; }
+/* Erro: borda vermelha (sem JS, pelo :user-invalid; com JS, pelo aria-invalid) e mensagem abaixo do campo */
+.formulario .campo__entrada:user-invalid, .formulario select:user-invalid,
+.formulario [aria-invalid="true"] { border-color: var(--erro); }
+.formulario input[type="checkbox"][aria-invalid="true"] { outline: 2px solid var(--erro); outline-offset: 2px; }
+.campo__erro { display: block; margin-top: 4px; font-size: .9rem; font-weight: 600; color: var(--erro); }
+.campo__erro:empty { display: none; }
+.campo--caixa .campo__erro { flex-basis: 100%; margin-top: 0; }
 .campo--largo { margin-top: 14px; }
-.campo--caixa { display: flex; align-items: flex-start; gap: 10px; margin: 16px 0 20px; }
+.campo--caixa { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 16px 0 20px; }
 .campo--caixa input { width: 22px; height: 22px; margin-top: 2px; flex: 0 0 22px; accent-color: var(--azul-medio); }
 .campo--caixa label { font-weight: 400; color: var(--texto); }
 .formulario__retorno { margin-top: 14px; font-weight: 600; color: var(--azul-escuro); }
 .formulario__retorno:empty { display: none; }
+.formulario__retorno--erro { color: var(--erro); }
+.formulario__rascunho { margin: 6px 0 0; font-size: .9rem; font-weight: 600; color: var(--azul-medio); }
+.formulario__rascunho:empty { display: none; }
 .contato-equipe ul { list-style: none; padding: 0; display: grid; gap: 4px; }
 
 @media (min-width: 640px) {

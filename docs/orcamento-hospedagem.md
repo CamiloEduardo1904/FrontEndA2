@@ -1,7 +1,7 @@
 # Orçamento de hospedagem e domínio
 
-Relatório comparativo de hospedagem e domínio. A página `orcamento_hospedagem.html` foi retirada do
-site por enquanto e pode voltar a partir do histórico do Git.
+Relatório comparativo de hospedagem e domínio. O mesmo conteúdo está no site, na página
+[`orcamento_hospedagem.html`](https://pequenosvalores.site/orcamento_hospedagem.html).
 
 > Valores consultados em 31/10/2026. Planos pagos têm preço promocional no primeiro ciclo e renovação
 > mais cara. Confirme no site de cada empresa antes de contratar.

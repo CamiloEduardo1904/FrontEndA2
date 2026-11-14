@@ -33,6 +33,23 @@ Registro das principais decisões, aprendizados e dificuldades do projeto.
   atender pessoas surdas e quem não pode ouvir no momento.
 - **Hospedagem estática na Railway** com o domínio próprio `pequenosvalores.site` (ver orçamento).
 
+## Uso de IA
+
+A equipe usa IA como apoio, com regras escritas no repositório: [`CLAUDE.md`](../CLAUDE.md) (regras gerais
+e de Git), [`public/CLAUDE.md`](../public/CLAUDE.md) (HTML, CSS e acessibilidade) e o
+[`plano-contexto.md`](plano-contexto.md). Entre as regras: sem frameworks, sem CSS inline, perguntar antes
+de inventar conteúdo, nada de deploy sem pedir e nenhuma assinatura de IA em commits e PRs. Todo código
+gerado entra por pull request e passa pela revisão de outro integrante.
+
+| Data | Ferramenta | Prompt (resumo) | Resultado | Aceito | Corrigido ou recusado |
+|------|------------|-----------------|-----------|--------|-----------------------|
+| 17/10/2026 | Claude Code | Criar a estrutura de IA do projeto e as regras de comportamento do agente. | `CLAUDE.md`, `public/CLAUDE.md` e plano de contexto (commits `543642a` e `6664e2b`). | As regras de HTML, CSS, acessibilidade e Git. | Regra acrescentada depois: PR e commit sem assinatura de IA (`05c802b`). |
+| — | Gerador de imagens | Roteiros escritos pela equipe para cada imagem da galeria e das páginas. | Imagens das páginas e da galeria. | As imagens sem defeito, depois de revisadas uma a uma. | Três tinham defeitos (objetos flutuando, pessoas duplicadas): duas foram retocadas ou cortadas e uma teve a legenda refeita. A linha de fonte das imagens foi retirada em `6f58b57`. |
+| 13/11/2026 | Claude Code | “Leia todo o conteúdo do repositório, arrume tudo o que for necessário e peça PR.” | PR #31: documentação de 10 arquivos atualizada para a Railway e o domínio pequenosvalores.site. | Revisado e aceito pela equipe em 14/11/2026. | A IA apontou que o robô de notícias não consegue gravar na branch protegida; a correção depende de uma decisão da equipe. |
+| 14/11/2026 | Claude Code | Completar o checklist da 2ª entrega: validação do formulário em JS com rascunho no `localStorage`, página de orçamento, melhorias do MVP e este registro. | PR com `contato.js` novo, `orcamento_hospedagem.html` e `melhorias-mvp.md`. | Aguardando revisão. | A IA não inventou a divisão de funções nem os pontos do professor: esses ficaram para a equipe preencher. |
+
+> Cada integrante pode acrescentar aqui os prompts que usou, com o que foi aceito e o que foi corrigido.
+
 ## Aprendizados
 
 - Semântica HTML5 e ARIA na prática: `aria-current`, `aria-live`, `aria-labelledby`, `role="region"`

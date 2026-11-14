@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="sem-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de hospedagem — Bolso Coletivo</title>
+    <meta name="description" content="Onde o Bolso Coletivo está publicado, por quê, e a comparação de preços de hospedagem e domínio feita pela equipe.">
+    <meta name="theme-color" content="#003B5C">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=4">
+    <script src="js/menu.js" defer></script>
+    <script src="js/leitura-hover.js?v=3" defer></script>
+</head>
+
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+        <div class="contem topo__barra">
+            <a class="marca" href="index.html">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <circle class="marca__moeda" cx="16" cy="16" r="15" />
+                    <path class="marca__cifra" d="M17.6 7v2.1c2 .3 3.4 1.4 3.9 3.2l-2.6.9c-.3-1-1.2-1.6-2.6-1.6-1.4 0-2.2.6-2.2 1.4 0 .9.8 1.2 2.9 1.7 2.8.6 4.6 1.6 4.6 4.2 0 2-1.5 3.4-4 3.8V25h-2.3v-2.3c-2.3-.3-3.9-1.6-4.4-3.6l2.7-.8c.3 1.2 1.4 2 3 2 1.6 0 2.4-.6 2.4-1.5 0-.9-.7-1.3-3-1.8-2.6-.6-4.4-1.5-4.4-4 0-1.9 1.4-3.3 3.7-3.7V7h2.3Z" /></svg>
+                Bolso Coletivo
+            </a>
+            <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+                Menu
+            </button>
+            <nav class="menu" id="menu-principal" aria-label="Principal">
+                <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="midia.html">Mídia</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <div class="pagina-topo">
+            <div class="contem">
+                <span class="sobretitulo">Orçamento</span>
+                <h1>Orçamento de hospedagem</h1>
+                <p>Onde o site está publicado, por que escolhemos assim e quanto custaria em outras opções.</p>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="contem leitura">
+                <section aria-labelledby="t-atual">
+                    <h2 id="t-atual">Onde o site está hoje</h2>
+                    <p>O Bolso Coletivo está publicado na <strong>Railway</strong>, que serve a pasta
+                        <code>public/</code> como site estático, com <strong>HTTPS</strong> e o domínio próprio
+                        <strong>pequenosvalores.site</strong>. A cada mudança aprovada no GitHub, o site é publicado de
+                        novo, sem passo manual. As notícias do dia são atualizadas por uma tarefa automática no GitHub
+                        Actions, que é gratuita.</p>
+                </section>
+
+                <section aria-labelledby="t-necessidades">
+                    <h2 id="t-necessidades">Do que o site precisa</h2>
+                    <ul>
+                        <li>Site estático (cerca de 4 MB de páginas e imagens), sem banco de dados, com HTTPS.</li>
+                        <li>Uma tarefa automática por dia, para as notícias.</li>
+                        <li>Custo zero ou muito baixo, porque é um projeto educativo.</li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="t-hospedagem">
+                    <h2 id="t-hospedagem">Pesquisa de hospedagem</h2>
+                    <p>Antes de publicar, a equipe comparou uma hospedagem gratuita para sites estáticos com duas
+                        hospedagens compartilhadas pagas.</p>
+                <div class="tabela-caixa" tabindex="0" role="region" aria-labelledby="cap-hospedagem">
+                    <table>
+                        <caption id="cap-hospedagem">Comparação de hospedagem (valores consultados em 31/10/2026)</caption>
+                        <thead>
+                            <tr><th scope="col">Critério</th><th scope="col">GitHub Pages</th><th scope="col">Hostinger — Premium</th><th scope="col">HostGator — Plano P</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Preço</td><td>Grátis</td><td>≈ R$ 12,99/mês (promoção)</td><td>≈ R$ 9,89/mês (promoção, 3 anos)</td></tr>
+                            <tr><td>Custo no 1º ano</td><td>R$ 0</td><td>≈ R$ 156</td><td>≈ R$ 119</td></tr>
+                            <tr><td>Tipo</td><td>Sites estáticos</td><td>Compartilhada</td><td>Compartilhada</td></tr>
+                            <tr><td>HTTPS</td><td>Automático</td><td>SSL grátis</td><td>SSL grátis</td></tr>
+                            <tr><td>Domínio incluso</td><td>Não</td><td>1º ano (planos anuais)</td><td>1 ano (ciclo anual ou maior)</td></tr>
+                            <tr><td>Publicação</td><td>Automática via Git</td><td>Painel/FTP</td><td>cPanel/FTP</td></tr>
+                            <tr><td>Tarefa diária</td><td>GitHub Actions</td><td>Cron</td><td>Cron</td></tr>
+                            <tr><td>Suporte em português</td><td>Não</td><td>Sim</td><td>Sim</td></tr>
+                            <tr><td>PHP / banco de dados</td><td>Não</td><td>Sim</td><td>Sim</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <p class="fonte">Planos pagos têm preço promocional no primeiro ciclo e renovação mais cara.
+                        Confirme no site de cada empresa antes de contratar.</p>
+                </section>
+
+                <section aria-labelledby="t-dominio">
+                    <h2 id="t-dominio">Pesquisa de domínio</h2>
+                <div class="tabela-caixa" tabindex="0" role="region" aria-labelledby="cap-dominio">
+                    <table>
+                        <caption id="cap-dominio">Comparação de registro de domínio .com.br</caption>
+                        <thead>
+                            <tr><th scope="col">Critério</th><th scope="col">Registro.br</th><th scope="col">Hostinger</th><th scope="col">Locaweb</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Preço</td><td>R$ 40,00/ano</td><td>≈ R$ 29,90 no 1º ano</td><td>≈ R$ 34,90 no 1º ano</td></tr>
+                            <tr><td>Renovação</td><td>R$ 40,00/ano (fixo)</td><td>Preço cheio</td><td>Preço cheio</td></tr>
+                            <tr><td>Quem é</td><td>Órgão oficial do .br</td><td>Revendedor</td><td>Revendedor</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                </section>
+
+                <section aria-labelledby="t-cenarios">
+                    <h2 id="t-cenarios">Cenários para o primeiro ano</h2>
+                <div class="tabela-caixa" tabindex="0" role="region" aria-labelledby="cap-cenarios">
+                    <table>
+                        <caption id="cap-cenarios">Cenários de custo no primeiro ano</caption>
+                        <thead>
+                            <tr><th scope="col">Cenário</th><th scope="col">Hospedagem</th><th scope="col">Domínio</th><th scope="col">Total</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>A — grátis</td><td>GitHub Pages</td><td>github.io</td><td>R$ 0</td></tr>
+                            <tr><td>B — domínio próprio</td><td>GitHub Pages</td><td>Registro.br (.com.br)</td><td>R$ 40</td></tr>
+                            <tr><td>C — tradicional</td><td>HostGator Plano P</td><td>incluso</td><td>≈ R$ 119</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                </section>
+
+                <section aria-labelledby="t-justificativa">
+                    <h2 id="t-justificativa">Por que hospedagem estática</h2>
+                    <ol>
+                        <li><strong>Custo:</strong> o site não precisa de servidor de aplicação nem de banco de dados,
+                            então não faz sentido pagar por eles.</li>
+                        <li><strong>Encaixe técnico:</strong> site estático, HTTPS automático e GitHub Actions
+                            gratuito para as notícias.</li>
+                        <li><strong>Fluxo de trabalho:</strong> publicação automática a partir do GitHub, com
+                            histórico de versões.</li>
+                        <li><strong>Sustentabilidade:</strong> site leve, sem servidor dedicado, imagens em WebP e sem
+                            rastreadores.</li>
+                    </ol>
+                    <p>Se o projeto precisar enviar o formulário de verdade, ter login ou banco de dados, a migração
+                        indicada é para uma hospedagem compartilhada, como HostGator ou Hostinger.</p>
+                </section>
+
+                <section aria-labelledby="t-fontes">
+                    <h2 id="t-fontes">Fontes</h2>
+                    <ul>
+                        <li><a href="https://docs.github.com/pt/pages">Documentação do GitHub Pages</a></li>
+                        <li><a href="https://registro.br/">Registro.br</a></li>
+                        <li><a href="https://www.hostinger.com/br/tutoriais/quanto-custa-um-dominio-de-site/">Hostinger: quanto custa um domínio</a></li>
+                        <li><a href="https://www.hostgator.com.br/">HostGator Brasil</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="contem">
+            <div class="rodape__grade">
+                <div>
+                    <p class="marca">
+                        <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <circle class="marca__moeda" cx="16" cy="16" r="15" />
+                    <path class="marca__cifra" d="M17.6 7v2.1c2 .3 3.4 1.4 3.9 3.2l-2.6.9c-.3-1-1.2-1.6-2.6-1.6-1.4 0-2.2.6-2.2 1.4 0 .9.8 1.2 2.9 1.7 2.8.6 4.6 1.6 4.6 4.2 0 2-1.5 3.4-4 3.8V25h-2.3v-2.3c-2.3-.3-3.9-1.6-4.4-3.6l2.7-.8c.3 1.2 1.4 2 3 2 1.6 0 2.4-.6 2.4-1.5 0-.9-.7-1.3-3-1.8-2.6-.6-4.4-1.5-4.4-4 0-1.9 1.4-3.3 3.7-3.7V7h2.3Z" /></svg>
+                        Bolso Coletivo
+                    </p>
+                    <p>Educação financeira em linguagem simples para quem vive com pouco. Conteúdo educativo,
+                        não é recomendação de investimento.</p>
+                </div>
+                <div>
+                    <h2>Aprenda</h2>
+                    <ul>
+                        <li><a href="tema.html">O tema</a></li>
+                        <li><a href="aprofundamento.html">Aprofundamento</a></li>
+                        <li><a href="simuladores.html">Simuladores</a></li>
+                        <li><a href="impacto.html">Impacto em dados</a></li>
+                        <li><a href="noticias.html">Notícias do dia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>O projeto</h2>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="midia.html">Mídia</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="rodape__base">© 2026 Bolso Coletivo · Projeto A2 de Desenvolvimento Front-end para Web (UNICID) ·
+                Equipe Bolso Coletivo.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
