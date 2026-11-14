@@ -31,7 +31,7 @@ Registro das principais decisões, aprendizados e dificuldades do projeto.
   corretamente a bengala vermelha e branca (pessoa surdocega).
 - **Vídeo e áudio próprios** com narração em voz sintética, legendas (WebVTT) e transcrição, para
   atender pessoas surdas e quem não pode ouvir no momento.
-- **Hospedagem no GitHub Pages** com domínio sugerido no Registro.br (ver orçamento).
+- **Hospedagem estática na Railway** com o domínio próprio `pequenosvalores.site` (ver orçamento).
 
 ## Aprendizados
 
@@ -39,7 +39,7 @@ Registro das principais decisões, aprendizados e dificuldades do projeto.
   em tabelas com rolagem.
 - Validação de formulário só com HTML5: `required`, `type="email"`, `pattern`, `min`/`max`.
 - Uso de Git e GitHub em equipe: branches, pull requests, revisão e proteção da branch principal.
-- Automação com GitHub Actions e publicação contínua com GitHub Pages.
+- Automação com GitHub Actions e publicação contínua na Railway.
 - Importância de checar fontes: dados de apostas do Banco Central e de um estudo do setor divergem.
 
 ## Dificuldades

@@ -6,6 +6,10 @@ site por enquanto e pode voltar a partir do histórico do Git.
 > Valores consultados em 31/10/2026. Planos pagos têm preço promocional no primeiro ciclo e renovação
 > mais cara. Confirme no site de cada empresa antes de contratar.
 
+> **Situação atual:** o site foi publicado na **Railway** (hospedagem estática da pasta `public/`)
+> com o domínio próprio **pequenosvalores.site**. A comparação abaixo registra a pesquisa feita
+> antes dessa decisão.
+
 ## Necessidades do site
 
 - Site estático (~4 MB), sem banco de dados, com HTTPS.
@@ -26,7 +30,7 @@ site por enquanto e pode voltar a partir do histórico do Git.
 | Suporte em português | Não | Sim | Sim |
 | PHP / banco de dados | Não | Sim | Sim |
 
-## Domínio (`cadareal.com.br`)
+## Domínio (`.com.br`)
 
 | Critério | Registro.br | Hostinger | Locaweb |
 |----------|-------------|-----------|---------|

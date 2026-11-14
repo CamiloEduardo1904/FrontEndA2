@@ -41,7 +41,7 @@ segredos fora do Git.
 
 ## 9. Estrutura de pastas
 ```
-public/        páginas .html, style.css e Assets/
+public/        páginas .html, style.css, js/, img/, assets/ e dados/
 docs/          plano de contexto e documentação
 CLAUDE.md      regras gerais da IA   ·   public/CLAUDE.md  regras do site
 .mcp.json      MCP (GitHub, Railway, Figma)

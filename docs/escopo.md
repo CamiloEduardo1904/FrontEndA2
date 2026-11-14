@@ -81,8 +81,7 @@ Todas as páginas acessam todas as outras pelo menu (10 itens) e pelo rodapé.
 
 ## 9. Tecnologias e ferramentas
 
-HTML5, CSS3, JavaScript (opcional), Python (robô de notícias), Git e GitHub, GitHub Actions, GitHub
-Pages, Visual Studio Code, Validador W3C, ferramentas de IA (apoio ao código, textos e imagens).
+HTML5, CSS3, JavaScript (opcional), Python (robô de notícias), Git e GitHub, GitHub Actions, Railway, Visual Studio Code, Validador W3C, ferramentas de IA (apoio ao código, textos e imagens).
 
 ## 10. Cronograma e divisão de tarefas
 

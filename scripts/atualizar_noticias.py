@@ -79,7 +79,7 @@ def classificar(titulo):
 
 
 def baixar(url, tentativas=3):
-    pedido = urllib.request.Request(url, headers={"User-Agent": "CadaReal/1.0 (+https://yagoxavier10.github.io/cada-real/)",
+    pedido = urllib.request.Request(url, headers={"User-Agent": "BolsoColetivo/1.0 (+https://pequenosvalores.site/)",
                                                   "Accept-Encoding": "identity"})
     for tentativa in range(tentativas):
         try:
